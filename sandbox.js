@@ -49,3 +49,39 @@ console.log(result4)
 
 let result5 = email2.replace('m', 'w')
 console.log(result5)
+
+
+// Math Operators
+
+let x = 10
+console.log(x)
+// Math operators: +, -, *, **, /, %
+let y = 3
+console.log(x + y)
+console.log(x - y)
+console.log(x * y)
+console.log(x / y)
+console.log(x % y)
+
+// Math order of operations PEDMAS
+
+let answer = (3 * x / 3 * y) - 4
+console.log(answer)
+
+//NaN = not a number
+console.log(5 / 'hello')
+
+let resultNum = 'the blog has ' + x + ' likes';
+console.log(resultNum)
+
+
+// Template String
+const title = "Blue Lock";
+const theme = "Ego";
+const views = 10000
+
+// Concatenation way
+let sentence = title + ' main theme is ' + theme + ' with the manga having over ' + views + ' viewers.'
+console.log(sentence)
+
+// Template string way
