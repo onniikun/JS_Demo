@@ -81,7 +81,46 @@ const theme = "Ego";
 const views = 10000
 
 // Concatenation way
-let sentence = title + ' main theme is ' + theme + ' with the manga having over ' + views + ' viewers.'
-console.log(sentence)
+let sentenceCon = title + ' main theme is ' + theme + ' with the manga having over ' + views + ' viewers.'
+console.log(sentenceCon)
 
 // Template string way
+let sentenceTem = `${title}'s main theme is ${theme} with the manga having over ${views} viewers.` 
+console.log(sentenceTem)
+
+// HTML way
+let sentenceHTML = `
+ <h2>${title}</h2>
+`;
+console.log(sentenceHTML)
+
+// Arrays
+// array positions [0, 1, 2, 3, 4, etc...]
+// So Individualistic = 0 position
+let playerType = [`Individualistic`, `Restrictive + Self Style`, `Wholeistic`, `Freedom`]
+console.log(playerType[0])
+
+
+let random = ['0', 0, "Individualistic", 'crystal']
+console.log(random)
+let playerTypeResult = playerType.join('-')
+console.log(playerTypeResult)
+
+let playerTypeResult2 = playerType.indexOf('Freedom')
+console.log(playerTypeResult2)
+
+let playerTypeResult3 = playerType.concat(['Talented learner', 'Genius'])
+console.log(playerTypeResult3)
+
+
+// Comparion operators
+console.log(age == 25);
+console.log(age = 25);
+console.log(age != 25);
+console.log(age > 20);
+console.log(age > 30);
+
+let name = 'shaun';
+
+console.log(name == 'shaun');
+console.log(name = 'shaun')
