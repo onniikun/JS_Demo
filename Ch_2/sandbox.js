@@ -1,3 +1,50 @@
+let age = 25;
+let year = 2026;
+
+
+// variables can be set add, subtracted, multiplied, and divided.
+console.log(year);
+console.log(year+age);
+
+// variables can be set as a constant value(cannot change)
+const num = 10
+console.log(num);
+
+// Old way of creating variables
+var score = 75;
+console.log(score);
+
+// number data type
+let number = 1
+console.log(number)
+
+// string data type
+let string = "hello world"
+console.log(string)
+
+// boolean(true or false) data type
+let boolean = true
+console.log(boolean)
+
+// null value
+let variable = null
+console.log(variable)
+
+
+/**
+ * Arrays
+ */
+// camel casing
+let arrayExample = [1, 2, 3, 4, 5]
+console.log(arrayExample[2])
+//expected value should be "3".
+
+
+let email = "example@gmail.com";
+let result = email.lastIndexOf('a')
+console.log(result)
+
+
 console.log("Hello World!");
 
 let age = 25;
