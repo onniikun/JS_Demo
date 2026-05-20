@@ -50,12 +50,64 @@ if(ninjas.length > 3){
 }
 
 // Else if statement
-const password = 'pass123123'; 
+const password = '@pas'; 
 
-if(password.length >= 10){
-    console.log(`password is long enough.`)
-} else if(password.length >= 6){
-    console.log(`password isnt long enough.`)
+if(password.length >= 10 && password.includes('@')){
+    console.log(`that is a good password.`)
+} else if(password.length >= 6 || password.includes('@')){
+    console.log(`password isnt strong enough.`)
 } else {
     console.log(`password isnt long enough.`)
+}
+
+/**
+ * Logical Knot
+ */
+// let user = false;
+
+// if(user){
+//     //condtion
+// } // output
+
+const score = [50, 25, 0, 30, 100, 20, 10]
+
+for(let i = 0; i < score.length; i++){
+
+    if(score[i] === 0){
+        continue;
+    }
+
+    console.log('your score:', score[i])
+
+    if(score[i] === 100){
+        console.log('congrates, you got the top score.')
+        break;
+    }
+    
+}
+
+/**
+ * Switch statement
+ */
+
+const grade = 75;
+
+switch(grade){
+    case 75:
+        console.log('you got an A!');
+        break;
+    case 'B':
+        console.log('you got an B!');
+        break;
+    case 'C':
+        console.log('you got an C!');
+        break;
+    case 'D':
+        console.log('you got an D!');
+        break;
+    case 'F':
+        console.log('you got an F!');
+        break;
+    default:
+        console.log('not a valid grade.')
 }
